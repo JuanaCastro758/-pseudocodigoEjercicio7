@@ -1,0 +1,28 @@
+Proceso Ejercicio_7
+	p<-0;
+	i<-0;
+	c<-0;
+	Escribir "Los numero son: ";
+	para x=1 hasta 15 Con Paso 1 Hacer
+		n<-Aleatorio(0,36);
+		Escribir n;
+		si n mod 2==0 Entonces
+			p<-p+1;
+		Sino
+			si n==0 Entonces
+				c<-c+1;
+			Sino
+				i<-i+1;
+			FinSi
+		FinSi
+		
+	FinPara
+	t<-p+i+c;
+	pp<-(p*100)/t
+	pim<-(i*100)/t
+	pc<-(c*100)/t
+	Escribir "Porcentajes: ";
+	Escribir pp," pociento de numeros pares";
+	Escribir pim," porciento de numeroa impares";
+	Escribir pc," porciento de ceros";
+FinProceso
